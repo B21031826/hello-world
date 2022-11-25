@@ -12,3 +12,4 @@ char *StrCpy(char *src)
                 char p[len+1]={'/0'};
 	return p; 
 }
+可编辑
