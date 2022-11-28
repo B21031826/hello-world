@@ -1,16 +1,17 @@
-char*StrCpy(char*str)
+/*strcpy函数代码*/
+char *StrCpy(char *src)
 {
-      int len = 0;
-      char*p=src;
-      while(*p!='\0')
-{
-     len++;
-     p++;
+                    int len；
+                len=sizeof(scr);
+                int *p = (int *)malloc( sizeof(int)*(len+1) );
+	while (len--) 
+	{ 
+		*(char *)p = *(char *)src; 
+		p = (char *)p + 1; 
+		src = (char *)src + 1; 
+	} 
+                char p[len+1]={'/0'};
+	return p; 
 }
-char*s=(char*)malloc(len+1);
-for(int i=0;i<len+1;i++)
-{  
-s[i]=p[i];
-}
-return s;
-}
+/*本地编辑
+*/
